@@ -68,7 +68,7 @@ class WeatherHelper {
      * @returns {string} UV Index query URL
      */
     buildUVIndexURL(latitude, longitude) {
-        var queryURL = "http://api.openweathermap.org/data/2.5/uvi?";
+        var queryURL = "https://api.openweathermap.org/data/2.5/uvi?";
         var queryParams = {
             "lat": latitude,
             "lon": longitude,
@@ -83,7 +83,7 @@ class WeatherHelper {
      * @returns {string} Five Day Forecast query URL
      */
     buildFiveDayForecastURL(city) {
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast?";
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?";
         var queryParams = {
             "q": city,
             "units": "imperial",
