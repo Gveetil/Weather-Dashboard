@@ -21,15 +21,13 @@ class WeatherHelper {
     }
 
     /** Adds a new city to the local storage
-     * @param {string} city the city to be added or updated 
+     * @param {string} city the city to be added 
      * @returns {boolean} true if city was newly added, else false
      */
     addCity(city) {
         // Check if city has already been searched for
         for (var index in this.cityList) {
             if (this.cityList[index] == city) {
-                // Move city to beginning of the search list
-                this.cityList.splice(0, 0, this.cityList.splice(index, 1)[0]);
                 return false;
             }
         }
@@ -74,6 +72,21 @@ class WeatherHelper {
         var queryParams = {
             "lat": latitude,
             "lon": longitude,
+            "appid": openWeatherMapAppId
+        };
+        return queryURL + $.param(queryParams);
+    }
+
+    /**
+     * Builds the open weather map query URL to retrieve the five day forecast for a given location
+     * @param {string} city the city to look for
+     * @returns {string} Five Day Forecast query URL
+     */
+    buildFiveDayForecastURL(city) {
+        var queryURL = "http://api.openweathermap.org/data/2.5/forecast?";
+        var queryParams = {
+            "q": city,
+            "units": "imperial",
             "appid": openWeatherMapAppId
         };
         return queryURL + $.param(queryParams);

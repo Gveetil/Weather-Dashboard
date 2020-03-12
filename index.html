@@ -22,9 +22,9 @@
         </div>
         <!-- Page Heading -->
         <div class="row">
-            <div class="col-12 col-md-3 p-0">
+            <div class="col-12 col-sm-3 p-0">
                 <div class="container-fluid py-3 mt-2">
-                    <h5 class="font-bold mb-6">Search for a City:</h5>
+                    <h5 class="h5 font-bold mb-6"><strong>Search for a City:</strong></h5>
                     <!-- Search Form -->
                     <form class="mb-6">
                         <div class="input-group">
@@ -37,26 +37,26 @@
                         </div>
                     </form>
                     <!-- Search Form -->
-                    <!-- Previous Search Items -->
-                    <div class="list-group" id="searchHistory">
-
+                    <!-- Search History -->
+                    <div class="list-group border rounded search-history-height" id="searchHistory">
                     </div>
-                    <!-- Previous Search Items -->
+                    <!-- Search History -->
                 </div>
             </div>
-            <div class="col-12 col-md-9 bg-white">
+            <div class="col-12 col-sm-9 bg-white">
+                <!-- Search Results -->
                 <span id="searchResultsContainer" class="collapse">
-                    <!-- Search Results -->
+                    <!-- City Weather Details -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card my-3">
                                 <div class="card-body">
-                                    <h4 class="card-title"><span id="forecastCity"></span>
+                                    <h4 class="card-title font-weight-bold"><span id="forecastCity"></span>
                                         (<span id="forecastDate"></span>) <img id="forecastIcon"
                                             alt="Current Weather Icon"></h4>
-                                    <p class="card-text">Temperature: <span id="forecastTemperature"></span> °F</p>
-                                    <p class="card-text">Humidity: <span id="forecastHumidity"></span> %</p>
-                                    <p class="card-text">Wind Speed: <span id="forecastWindSpeed"></span> MPH</p>
+                                    <p class="card-text py-1">Temperature: <span id="forecastTemperature"></span> °F</p>
+                                    <p class="card-text py-1">Humidity: <span id="forecastHumidity"></span> %</p>
+                                    <p class="card-text py-1">Wind Speed: <span id="forecastWindSpeed"></span> MPH</p>
                                     <p class="card-text">UV Index: <span class="btn text-white"
                                             id="forecastUVIndex"></span>
                                     </p>
@@ -64,34 +64,22 @@
                             </div>
                         </div>
                     </div>
+                    <!-- City Weather Details -->
+                    <!-- 5-Day Forecast -->
                     <div class="row">
                         <div class="col-12">
-                            <h5 class="card-title">5-Day Forecast:</h5>
+                            <h4 class="card-title font-weight-bold">5-Day Forecast:</h4>
                         </div>
                     </div>
-                    <div class="d-flex flex-row justify-content-start">
-                        <div class="card text-white bg-primary mr-4">
-                            <div class="card-body">
-                                <h5 class="card-title">1/2/3</h5>
-                                <img>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Humidity:</p>
-                            </div>
-                        </div>
-
-                        <div class="card text-white bg-primary">
-                            <div class="card-body">
-                                <h5 class="card-title">1/2/3</h5>
-                                <img>
-                                <p class="card-text">Temp:</p>
-                                <p class="card-text">Humidity:</p>
-                            </div>
-                        </div>
+                    <div class="d-flex flex-row justify-content-start flex-wrap" id="fiveDayForecast">
                     </div>
+                    <!-- 5-Day Forecast -->
                 </span>
+                <!-- Search Results -->
+                <!-- Errors -->
                 <div id="errorMessage" class="alert alert-light py-4 collapse">
-
                 </div>
+                <!-- Errors -->
             </div>
         </div>
     </div>

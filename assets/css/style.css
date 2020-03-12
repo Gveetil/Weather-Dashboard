@@ -4,3 +4,15 @@ body {
   line-height: 1;
 }
 
+.search-history-height {
+  max-height: auto;
+  overflow-y: auto;
+}
+
+/* search-history-height scales down for smaller viewports*/
+@media (max-width: 576px) {
+  .search-history-height {
+    max-height: 85px;
+  }
+}
+
