@@ -5,7 +5,7 @@ const errorNoResultsFound = "No results found for this City !";
 const errorConnecting = "Unable to retrieve weather data!<br>";
 const errorForecastNotFound = "Unable to retrieve Forecast data!";
 // Weather icon image url
-const weatherIconUrl = "http://openweathermap.org/img/w/icon_name.png";
+const weatherIconUrl = "https://openweathermap.org/img/w/icon_name.png";
 // UV Index scale with colors
 const uvIndexScaleColors = {
     0: "green", // low 0-3
