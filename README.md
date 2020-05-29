@@ -1,6 +1,6 @@
 # Weather Dashboard
 
- [![Image of Weather Dashboard Icon](assets/images/readme_weather_dashboard_icon.png "Open the Weather Dashboard.")](https://gveetil.github.io/Weather-Dashboard/)
+Application Link: [https://gveetil.github.io/Weather-Dashboard/](https://gveetil.github.io/Weather-Dashboard/)
 
 ## Description
 The weather dashboard enables users to view the weather outlook for any given city. Users have the option of searching for a city and the application then loads up the current and future weather conditions for that city. The application also maintains a history of the cities that were loaded up by the search. 
